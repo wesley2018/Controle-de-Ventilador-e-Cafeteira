@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" 
+	tools:context="com.example.controle_ventilador_cafeteira.Vent_cafet_Activity">
+	
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:src="@drawable/logo" />
+    
+    <LinearLayout 
+        		android:id="@+id/linearLayoutLed1" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:paddingTop="50px"
+				android:background="#FFFFFF">
+	<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:textColor="#00BFFF"
+			android:textStyle="bold"
+			android:text="VENTILADOR" />
+		</LinearLayout>
+	
+    <LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:background="#FFFFFF">
+	<ImageButton
+        android:id="@+id/btVenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/venti" />
+		</LinearLayout>
+	
+    <LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:paddingTop="25px"
+				android:background="#FFFFFF">
+	<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:textColor="#00BFFF"
+			android:textStyle="bold"
+			android:text="CAFETEIRA" />
+		</LinearLayout>
+    	
+    <LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:background="#FFFFFF">
+	<ImageButton
+        android:id="@+id/btCafet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cafet"/>
+		</LinearLayout>
+	<TextView 	
+	    	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:paddingRight="150px" />
+
+	<TextView
+    		  android:layout_width="fill_parent" 
+    		  android:layout_height="wrap_content" 
+    		   android:textColor="#00BFFF"
+    		   android:textSize="15sp"
+    		   android:textStyle="bold"
+    		  android:gravity="center"
+    		  android:background="#FFFFFF"  
+    		  android:text="STATUS" />
+	<LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:background="#FFFFFF">
+	<TextView 
+			android:paddingRight="10px" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00BFFF"
+    		android:textSize="15sp"
+			android:textStyle="bold"
+			android:text="VENTILADOR:" />
+
+	<TextView
+	    android:id="@+id/tvStatusVenti"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingRight="41px"
+	    android:text="on..."
+	    android:textColor="#00BFFF"
+    	android:textSize="15sp"
+	    android:textStyle="bold" >
+</TextView>
+		</LinearLayout>
+		
+	<LinearLayout 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:background="#FFFFFF">
+	<TextView 
+			android:paddingRight="10px" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#00BFFF"
+    		android:textSize="15sp"
+			android:textStyle="bold"
+			android:text="CAFETEIRA" />
+
+	<TextView
+	    android:id="@+id/tvStatusCafet"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingRight="41px"
+	    android:text="on..."
+	    android:textColor="#00BFFF"
+    	android:textSize="15sp"
+	    android:textStyle="bold" >
+</TextView>
+		</LinearLayout>		
+</LinearLayout>
